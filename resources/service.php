@@ -150,10 +150,10 @@ return [
                     'location' => 'query',
                     'required' => false
                 ],
-                'genre_exact' => [
+                'token' => [
                     'type' => 'string',
                     'location' => 'query',
-                    'required' => false
+                    'required' => true
                 ]
             ]
         ],
@@ -241,6 +241,13 @@ return [
             'httpMethod' => 'GET',
             'uri' => 'oauth/identity',
             'responseModel' => 'GetResponse',
+            'parameters' => [
+                    'token' => [
+                            'type' => 'string',
+                            'location' => 'uri',
+                            'required' => true
+                        ]
+                ]   
         ],
         'getInventory' => [
             'httpMethod' => 'GET',
