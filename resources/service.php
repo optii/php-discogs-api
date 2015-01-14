@@ -149,6 +149,11 @@ return [
                     'type' => 'integer',
                     'location' => 'query',
                     'required' => false
+                ],
+                'genre_exact' => [
+                    'type' => 'string',
+                    'location' => 'query',
+                    'required' => false
                 ]
             ]
         ],
