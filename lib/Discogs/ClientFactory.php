@@ -26,6 +26,7 @@ class ClientFactory
         ];
 
         $client = new Client(self::mergeRecursive($defaultConfig, $config));
+        $client->setDefaultOption('verify', false);
         $service = include __DIR__ . '/../../resources/service.php';
         $description = new Description($service);
 
