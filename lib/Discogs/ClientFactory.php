@@ -21,6 +21,7 @@ class ClientFactory
         $defaultConfig = [
             'defaults' => [
                 'headers' => ['User-Agent' => 'php-discogs-api/1.0.0 +https://github.com/ricbra/php-discogs-api'],
+                'query' => [],
             ],
         ];
 
