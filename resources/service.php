@@ -149,11 +149,6 @@ return [
                     'type' => 'integer',
                     'location' => 'query',
                     'required' => false
-                ],
-                'token' => [
-                    'type' => 'string',
-                    'location' => 'query',
-                    'required' => true
                 ]
             ]
         ],
